@@ -1,14 +1,7 @@
 # lottier
 
-A new Flutter package project.
+![lottie logo](https://airbnb.io/lottie/images/Introduction_00_sm.gif)
 
-## Getting Started
+An implementation of [Lottie](https://airbnb.io/lottie) for Flutter. Unlike other Lottie Flutter plugins, this one is implemented in pure Dart.
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+The codebase of this port is based on the [lottie-android](https://github.com/airbnb/lottie-android) implementation.
