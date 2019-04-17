@@ -99,7 +99,7 @@ abstract class KeyframeAnimationBase<K, A> {
     return keyframe;
   }
 
-  double get linearKeyframeProgress {
+  double get linearCurrentKeyframeProgress {
     if (_isDiscrete) return 0;
 
     var keyframe = currentKeyframe;
@@ -114,7 +114,7 @@ abstract class KeyframeAnimationBase<K, A> {
     var keyframe = currentKeyframe;
     if (keyframe.isStatic) return 0;
 
-    return keyframe.interpolator.getInterpolation(linearKeyframeProgress);
+    return keyframe.interpolator.getInterpolation(linearCurrentKeyframeProgress);
   }
 
   double get startDelayProgress {

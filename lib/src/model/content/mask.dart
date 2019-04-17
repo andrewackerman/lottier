@@ -1,3 +1,6 @@
+import '../animatable/animatable_shape_value.dart';
+import '../animatable/animatable_integer_value.dart';
+
 class Mask {
   final MaskMode maskMode;
   final AnimatableShapeValue maskPath;

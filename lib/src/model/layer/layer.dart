@@ -1,5 +1,6 @@
 import '../content/content_model.dart';
 import '../../composition.dart';
+import '../content/mask.dart';
 
 class Layer {
   final List<ContentModel> shapes;
