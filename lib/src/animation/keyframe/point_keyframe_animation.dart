@@ -1,7 +1,7 @@
 
 
 import './keyframe_animation.dart';
-import '../../model/data/point.dart';
+import '../../value/point.dart';
 import '../../value/keyframe.dart';
 
 class PointKeyframeAnimation extends KeyframeAnimation<Point> {
@@ -26,7 +26,7 @@ class PointKeyframeAnimation extends KeyframeAnimation<Point> {
         startPoint,
         endPoint,
         keyframeProgress,
-        linearKeyframeProgress,
+        linearCurrentKeyframeProgress,
         progress,
       );
 

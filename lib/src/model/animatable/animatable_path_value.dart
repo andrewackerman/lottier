@@ -2,7 +2,7 @@ import '../../animation/keyframe/point_keyframe_animation.dart';
 import '../../animation/keyframe/path_keyframe_animation.dart';
 import '../../animation/keyframe/keyframe_animation_base.dart';
 import './animatable_value.dart';
-import '../data/point.dart';
+import '../../value/point.dart';
 import '../../value/keyframe.dart';
 
 class AnimatablePathValue implements AnimatableValue<Point, Point> {

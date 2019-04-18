@@ -34,8 +34,8 @@ class ScaleKeyframeAnimation extends KeyframeAnimation<ScaleXY> {
     }
 
     final newValue = ScaleXY.lerp(startTransform, endTransform, keyframeProgress);
-    _scaleXY.scaleX = newValue.scaleX;
-    _scaleXY.scaleY = newValue.scaleY;
+    _scaleXY.x = newValue.x;
+    _scaleXY.y = newValue.y;
     return _scaleXY;
   }
 

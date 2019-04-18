@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import '../../utility/math.dart' as Math;
+import '../utility/math.dart' as Math;
 
 class Point {
   double x;
@@ -13,6 +13,7 @@ class Point {
 
   double get lengthSqr => x * x + y * y;
   double get length => Math.sqrt(lengthSqr);
+  bool get isZero => x == 0 && y == 0;
 
   bool operator ==(Object o) {
     if (o is Point) return x == o.x && y == o.y;

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import '../data/point.dart';
+import '../../value/point.dart';
 import '../cubic_curve_data.dart';
 import '../../utility/logger.dart';
 import '../../utility/math.dart' as Math;

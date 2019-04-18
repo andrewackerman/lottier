@@ -6,6 +6,7 @@ import '../../animation/content/painting_content.dart';
 import './layer.dart';
 import '../../lottier_widget.dart';
 import '../../animation/keyframe/keyframe_animation_base.dart';
+import '../../animation/keyframe/transform_keyframe_animation.dart';
 
 abstract class LayerBase implements PaintingContent {
 

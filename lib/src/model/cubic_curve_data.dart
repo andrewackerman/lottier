@@ -1,4 +1,4 @@
-import './data/point.dart';
+import '../value/point.dart';
 
 class CubicCurveData {
   Point controlPoint1;

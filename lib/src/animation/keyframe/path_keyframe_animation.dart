@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import './keyframe_animation.dart';
-import '../../model/data/point.dart';
+import '../../value/point.dart';
 import '../../value/keyframe.dart';
 import './path_keyframe.dart';
 import '../../utility/utility.dart';

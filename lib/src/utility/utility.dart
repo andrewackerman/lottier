@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import '../model/data/point.dart';
+import '../value/point.dart';
 
 class Utility {
 

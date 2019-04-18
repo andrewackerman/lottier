@@ -2,10 +2,10 @@ library lottier;
 
 import 'dart:ui';
 
-import './model/data/image_asset.dart';
+import './value/image_asset.dart';
 import './model/layer/layer.dart';
 import './model/marker.dart';
-import './model/data/font.dart';
+import './value/font.dart';
 import './model/font_character.dart';
 import './performance_tracker.dart';
 

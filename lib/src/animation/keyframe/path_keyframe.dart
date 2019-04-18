@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import '../interpolator.dart';
-import '../../model/data/point.dart';
+import '../../value/point.dart';
 import '../../value/keyframe.dart';
 import '../../composition.dart';
 import '../../utility/utility.dart';
