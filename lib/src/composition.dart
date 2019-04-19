@@ -1,5 +1,3 @@
-library lottier;
-
 import 'dart:ui';
 
 import './value/image_asset.dart';
@@ -73,7 +71,7 @@ class LottierComposition {
   void setPerformanceTrackingEnabled(bool enabled) => performanceTracker.enabled = enabled;
 
   Layer layerModelForId(int id) => _layerMap[id];
-  List<Layer> precompsForId(int id) => _precomps[id];
+  List<Layer> precompsForId(String id) => _precomps[id];
   Marker getMarker(String name) => _markers.firstWhere((m) => m.equalsName(name), orElse: () => null);
 
   double get duration => durationFrames / frameRate * 1000;

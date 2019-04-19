@@ -10,6 +10,7 @@ class ScaleXY {
   ScaleXY.zero() : this(0, 0);
   
   bool get isZero => x == 0 && y == 0;
+  bool get isNotZero => x != 0 || y != 0;
 
   bool operator ==(Object o) {
     if (o is ScaleXY) return x == o.x && y == o.y;

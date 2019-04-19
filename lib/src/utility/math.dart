@@ -10,3 +10,9 @@ double toRadians(double degrees) => degrees * _toRadiansVal;
 
 const double _toDegreesVal = 57.295779513;
 double toDegrees(double radians) => radians * _toDegreesVal;
+
+T clamp<T extends num>(T n, T min, T max) {
+  if (n < min) return min;
+  if (n > max) return max;
+  return n;
+}

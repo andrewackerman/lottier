@@ -4,6 +4,8 @@ import '../content/mask.dart';
 import '../../value/keyframe.dart';
 import '../animatable/animatable_transform.dart';
 import '../animatable/animatable_double_value.dart';
+import '../animatable/animatable_text_frame.dart';
+import '../animatable/animatable_text_properties.dart';
 
 class Layer {
 
@@ -71,6 +73,8 @@ class Layer {
   final List<Keyframe<double>> inOutKeyframes;
   final MatteType matteType;
   final bool hidden;
+
+  double get startProgress => startFrame / composition.durationFrames;
   
 }
 

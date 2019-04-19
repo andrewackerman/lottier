@@ -1,10 +1,13 @@
 import 'dart:ui';
 
+import 'package:vector_math/vector_math.dart';
+
 import '../value/point.dart';
+import './math.dart' as Math;
 
 class Utility {
 
-  static double get pixelRatio => window.devicePixelRatio;
+  static double get dpScale => window.devicePixelRatio;
 
   static Path createPath(Point startPoint, Point endPoint, Point cp1, Point cp2) {
     final path = Path();
@@ -41,6 +44,20 @@ class Utility {
     if (minor < minMinor) return false;
 
     return patch >= minPatch;
+  }
+
+  static Rect applyMatrixToRect(Matrix3 matrix, Rect rect) {
+    var topLeft = Vector3(rect.left, rect.top, 0.0)..applyMatrix3(matrix);
+    var topRight = Vector3(rect.right, rect.top, 0.0)..applyMatrix3(matrix);
+    var bottomLeft = Vector3(rect.left, rect.bottom, 0.0)..applyMatrix3(matrix);
+    var bottomRight = Vector3(rect.right, rect.bottom, 0.0)..applyMatrix3(matrix);
+
+    var newLeft = Math.min(topLeft.x, bottomLeft.x);
+    var newTop = Math.min(topLeft.y, topRight.y);
+    var newRight = Math.max(topRight.x, bottomRight.x);
+    var newBottom = Math.max(bottomLeft.y, bottomRight.y);
+
+    return Rect.fromLTRB(newLeft, newTop, newRight, newBottom);
   }
 
 }

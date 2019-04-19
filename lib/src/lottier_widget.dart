@@ -1,3 +1,5 @@
+import 'dart:ui' as UI;
+
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
@@ -95,5 +97,19 @@ class LottierRenderBox extends RenderBox {
     context.canvas.translate(offset.dx, offset.dy);
     composition.paint(context.canvas);
     context.canvas.restore();
+  }
+
+  UI.Image getImageAsset(String refId) {
+    if (imageAssetManager != null) {
+
+    }
+  }
+
+  ImageAssetManager _imageAssetManager;
+  ImageAssetManager get imageAssetManager {
+    if (_imageAssetManager == null) {
+      _imageAssetManager = new ImageAssetManager();
+    }
+    return _imageAssetManager;
   }
 }

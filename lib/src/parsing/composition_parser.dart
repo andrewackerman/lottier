@@ -19,7 +19,7 @@ class LottierCompositionParser {
   }
 
   static LottierComposition fromMap(Map<String, dynamic> jsonMap) {
-    var scale = Utility.pixelRatio;
+    var scale = Utility.dpScale;
     var startFrame = 0.0;
     var endFrame = 0.0;
     var frameRate = 0.0;

@@ -5,8 +5,22 @@ import 'package:lottier/src/composition.dart';
 import '../../value/lottier_value_callback.dart';
 import '../../value/keyframe.dart';
 
-typedef void AnimationListener();
+abstract class AnimationListener {
 
+  void onValueChanged();
+
+}
+
+class SimpleAnimationListener implements AnimationListener {
+
+  final void Function() _callback;
+
+  SimpleAnimationListener(this._callback);
+
+  @override
+  onValueChanged() => _callback();
+
+}
 
 abstract class KeyframeAnimationBase<K, A> {
 
